@@ -15,7 +15,7 @@ $font_roboto: 'Roboto', sans-serif;
 $font_BebasNeue: 'Bebas Neue', cursive;
 
 /* MIXINS */
-@mixin Navigations {
+@mixin Navigations {    
     display: inline;
     padding: 4px;
     margin: 1rem;
@@ -54,7 +54,7 @@ $font_BebasNeue: 'Bebas Neue', cursive;
 }
 
 main{
-    background-image: url("../imgs/Backgrounds/rbcd_Background_Main.png");
+    background-image: url("../imgs/Backgrounds/rcdee_background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

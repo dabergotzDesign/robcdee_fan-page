@@ -13,6 +13,7 @@ header {
 header nav {
   padding: 1rem 0;
   margin-left: 15rem;
+  vertical-align: center;
 }
 header nav a {
   font-family: "Roboto", sans-serif;
@@ -36,9 +37,14 @@ header img {
 footer {
   background-image: linear-gradient(to bottom, pink, whitesmoke);
   white-space: none;
+  /* li{
+      margin: 0 1rem;
+  } */
 }
-footer li {
-  margin: 0 1rem;
+footer ul {
+  display: block;
+  margin: auto 8px;
+  width: 50%;
 }
 footer a #twitch:hover,
 footer a #twitch:focus {
@@ -62,8 +68,9 @@ footer a #twitter:focus {
 }
 footer a i {
   color: grey;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 8px;
+  letter-spacing: 3px;
 }
 
 /* VARIABLES */
@@ -76,7 +83,7 @@ footer a i {
 }
 
 main {
-  background-image: url("../imgs/Backgrounds/rbcd_Background_Main.png");
+  background-image: url("../imgs/Backgrounds/rcdee_background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
