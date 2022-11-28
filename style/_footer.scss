@@ -1,0 +1,55 @@
+/* IMPORTS */
+
+
+/* VARIABLES */
+$color_Link: whitesmoke;
+$color_twitch: #772ce8;
+$color_youtube: #FF0000;
+$color_instagram:white;
+$color_twitter: #1DA1F2;
+
+/* MIXINS */
+
+
+footer{
+    
+    background-image: linear-gradient(to bottom, pink, whitesmoke);
+    white-space: none;
+
+    li{
+        margin: 0 1rem;
+    }
+
+    a{
+        #twitch:hover,
+        #twitch:focus{
+            color: $color_twitch;
+            text-decoration: none;
+        }
+
+        #youtube:hover,
+        #youtube:focus{
+            color: $color_youtube;
+            text-decoration: none;
+        }
+
+        #instagram:hover,
+        #instagram:focus{
+            color: $color_instagram;
+            text-decoration: none;
+        }
+
+        #twitter:hover,
+        #twitter:focus{
+            color: $color_twitter;
+            text-decoration: none;
+        }
+
+            i{
+                color: grey;
+                font-size: 2rem;
+                padding: 8px;
+            } 
+        }   
+}
+
