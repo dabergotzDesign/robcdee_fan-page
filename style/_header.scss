@@ -11,16 +11,26 @@ $font_nav: 'Roboto', sans-serif;
 header{
     height: 6rem;
     background-image: linear-gradient(to right, pink, whitesmoke);
-    color: $color_Link;
     border-bottom: 2px red solid;
 
     nav{
-        padding: 1rem 0;
+        padding: 60px 0 0 1rem;
         margin-left: 15rem;
         vertical-align: center;
 
         a{
             font-family: 'Roboto', sans-serif;
+            color: $color_Link;
+            text-shadow: 1px 1px #111;
+        }
+
+        button{
+            display: none;
+            padding: 8px;
+            font-size: 2.5rem;
+            color: whitesmoke;
+            background-color: transparent;
+            border: none;
         }
     }
 
@@ -37,5 +47,4 @@ header{
         z-index: 999;
     }
 }
-
 

@@ -1,0 +1,86 @@
+/* IMPORTS */
+
+/* VARIABLES */
+$font_roboto: 'Roboto', sans-serif;
+
+/* MIXINS */
+@mixin Table {
+    border: 1px #111 solid;
+    background-color: rgba(245, 245, 245, 0.5);
+    font-family: $font_roboto;
+}
+
+/* Container for Flex */
+#mainMemes{
+    display: block;
+    margin: auto 10%;
+
+    h2{
+        text-align: center;
+        color: whitesmoke;
+        font-family: $font_roboto;
+        font-size: 1.5rem;
+        padding: 8px;
+        text-shadow: 1px 1px #111;
+    }
+
+    table,
+    th,
+    tr,
+    td{
+        @include Table()
+    }
+
+    table{
+        margin: auto 15%;
+    }
+
+    th{
+        padding: 4px;
+    }
+
+    td{
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 8px;
+
+        img{
+            display: block;
+            margin: auto;
+            width: 50%;
+            padding: 4px;
+        }
+
+    }
+
+    hr{
+        margin: 2% 1%;
+        color: whitesmoke;
+        height: 1px;
+    }
+
+    #highlightSection{
+        display: block;
+        margin: auto 25%;
+        padding-bottom: 5%;
+
+        h3{
+            text-align: left;
+            padding: 4px;
+            color: pink;
+            font-family: $font_roboto;
+            text-shadow: 1px 1px #111;
+        }
+
+        p{
+            border: 1px whitesmoke solid;
+            background-color: rgba(211, 211, 211, 0.5);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+            padding: 8px;
+            line-height: 20px;
+        }
+    }
+
+   
+}

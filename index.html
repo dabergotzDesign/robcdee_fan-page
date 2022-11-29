@@ -12,7 +12,8 @@
 <body>
     <header>
         <nav>
-            <ul>
+            <button id="hamburgerButton"><i class="fas fa-bars"></i></button>
+            <ul id="navigationTop">
                 <li><a href="#">Home</a></li>
                 <li><a href="./html/memes.html">Memes & Highlights</a></li>
                 <li><a href="./html/disclaimer.html">Disclaimer</a></li>
@@ -25,12 +26,11 @@
     </header>
     <main>
 
-        <section class="bannerContainer">
-            <!-- <img class="banner" src="./imgs/Backgrounds/gifs/bN5Xgbm.gif" alt="pixel-art gifs"> -->
-            <div class="banner"></div> <!-- InnerHTML empty for background images -->
-        </section>
+        <div class="bannerContainer">
+            <div class="banner"></div>
+        </div>
 
-        <section class="about">
+           <article class="about">
             <h1>RcDigital - a Robcdee fan site</h1>
                 <!-- About Text -->
                 <div class="blogContainer">
@@ -54,21 +54,25 @@
     
                     <div class="blogText">
                         <img src="./imgs/5b85b591-55e7-420c-992d-962be5242aab-profile_image-300x300.jpg" alt="Tracy Haoma Twitch">
-                            <h2>The Traid Leader - Rob's better Half</h2>
+                            <h2>The Triad Leader - Rob's better Half</h2>
                             <p>
                                 Tracy Haoma <a href="https://www.twitch.tv/tracy_haoma" target="_blank">(Twitch)</a> is the chinese woman on Robs side. If Rob doesn't stream right now
                                 he's with Tracy. But even when Rob isn't around she is streaming from time to time. Unlike Rob she uses the stream from home and has cooking stream or just chatting.
                             </p>
+                            <p>
+                                Outside of her own stream she does also appear in Rob's streams and together they not life through the day & night of Toyko but also different locations 
+                                of Japan or even further away in different countries.
+                            </p>
                         </div>
                 </div>
                 
-        </section>
+        </article>
     </main>
     <footer>
             <ul>
                 <li>
                     <a class="footerLink" href="https://www.twitch.tv/robcdee" target="_blank">
-                        <i class="fa-brands fa-twitch" id="twitch">Twitch</i>
+                        <i class="fa-brands fa-twitch twitch" id="twitch">Twitch</i>
                     </a>
                 </li>
                 <li>
@@ -89,4 +93,5 @@
             </ul>
     </footer>
 </body>
+<script src="./js/hamburger_menu.js"></script>
 </html>
