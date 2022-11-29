@@ -191,28 +191,54 @@ ul{
                                                         /* MEDIA QUERY MAIN PAGE */
                                                         /* ////////////////////// */
 
+/* Nav resolution */
+@media screen and (max-width: 1040px) {
+    li a{
+        font-size: 1.2rem;
+    }
+}
+
+/* Footer Nav order */
+@media screen and (max-width: 775px){
+    footer{
+        ul{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+    }
+}
+
 /* Tablet & Laptop */                                                        
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 775px) {
 
     /* Header */
     nav{
         
-
-        
         ul{
             display: none;
             width: 100%;
+
+            li{
+                margin: 0;
+                padding: 0 4px;
+                background-color: rgba(173, 216, 230, 0.75);
+                z-index: 999;
+            }
         }
 
         #hamburgerButton{
             display: block;
+            text-align: center;
+            margin: 0 auto;
+            width: 50%;
         }
 
         ul.show{
-            display: block;
+            display: flex;
+            flex-flow: column nowrap;
             text-align: center;
-            margin: auto;
-            padding: 4px;
+            padding: 2px 4px;
         }
        }
 
@@ -231,5 +257,10 @@ ul{
         height: 10vh;
     }
 
+    .imageContainer{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
     
 }

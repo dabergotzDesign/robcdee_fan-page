@@ -10,9 +10,10 @@ header {
   border-bottom: 2px red solid;
 }
 header nav {
-  padding: 60px 0 0 1rem;
-  margin-left: 15rem;
-  vertical-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 2%;
 }
 header nav a {
   font-family: "Roboto", sans-serif;
@@ -45,6 +46,7 @@ header img {
 /* MIXINS */
 footer {
   background-image: linear-gradient(to bottom, pink, whitesmoke);
+  border-top: 2px lightblue solid;
 }
 footer ul {
   display: block;
@@ -317,21 +319,44 @@ ul a:hover, ul a:focus {
 /* ////////////////////// */
 /* MEDIA QUERY MAIN PAGE */
 /* ////////////////////// */
+/* Nav resolution */
+@media screen and (max-width: 1040px) {
+  li a {
+    font-size: 1.2rem;
+  }
+}
+/* Footer Nav order */
+@media screen and (max-width: 775px) {
+  footer ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+}
 /* Tablet & Laptop */
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 775px) {
   /* Header */
   nav ul {
     display: none;
     width: 100%;
   }
+  nav ul li {
+    margin: 0;
+    padding: 0 4px;
+    background-color: rgba(173, 216, 230, 0.75);
+    z-index: 999;
+  }
   nav #hamburgerButton {
     display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
   }
   nav ul.show {
-    display: block;
+    display: flex;
+    flex-flow: column nowrap;
     text-align: center;
-    margin: auto;
-    padding: 4px;
+    padding: 2px 4px;
   }
   /* Main */
   h1 {
@@ -343,6 +368,11 @@ ul a:hover, ul a:focus {
   }
   .banner {
     height: 10vh;
+  }
+  .imageContainer {
+    display: block;
+    margin: auto;
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

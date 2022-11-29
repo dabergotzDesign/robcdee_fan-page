@@ -14,9 +14,10 @@ header{
     border-bottom: 2px red solid;
 
     nav{
-        padding: 60px 0 0 1rem;
-        margin-left: 15rem;
-        vertical-align: center;
+        display: block;
+        margin: 0 auto ;
+        width: 70%;
+        padding-top: 2%;
 
         a{
             font-family: 'Roboto', sans-serif;
