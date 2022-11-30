@@ -76,7 +76,13 @@
     </main>
     <footer>
         <!-- media query: hide socials, toggle by button (arrow) -->
-            <ul>
+            <div id="socialFooter">
+                <div>SOCIALS</div>
+                <button id="socialBtn">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </button>
+            </div>
+            <ul id="socials">
                 <li>
                     <a class="footerLink" href="https://www.twitch.tv/robcdee" target="_blank">
                         <i class="fa-brands fa-twitch twitch" id="twitch">Twitch</i>
@@ -99,6 +105,8 @@
                 </li>
             </ul>
     </footer>
+
+    <!-- SCRIPTS -->
+       <script src="./js/hamburger_menu.js"></script>
 </body>
-<script src="./js/hamburger_menu.js"></script>
 </html>

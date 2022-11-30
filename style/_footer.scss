@@ -8,6 +8,8 @@ $color_youtube: #FF0000;
 $color_instagram:white;
 $color_twitter: #1DA1F2;
 
+$font_roboto: 'Roboto', sans-serif;
+
 /* MIXINS */
 
 
@@ -16,10 +18,27 @@ footer{
     background-image: linear-gradient(to bottom, pink, whitesmoke);
     border-top: 2px lightblue solid;
 
+    #socialFooter{
+        div{
+            text-align: center;
+            font-family: $font_roboto;
+            font-size: 1rem;
+            font-weight: bold;
+            color: gray;
+
+        }
+    }
+
     ul{
-        display: block;
+        display: none;
         margin: 0 auto;
         width: 50%;
+    }
+
+    .showSocials{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
     }
 
     a{
@@ -55,4 +74,3 @@ footer{
             } 
         }   
 }
-

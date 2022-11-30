@@ -48,10 +48,22 @@ footer {
   background-image: linear-gradient(to bottom, pink, whitesmoke);
   border-top: 2px lightblue solid;
 }
+footer #socialFooter div {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: gray;
+}
 footer ul {
-  display: block;
+  display: none;
   margin: 0 auto;
   width: 50%;
+}
+footer .showSocials {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 footer a #twitch:hover,
 footer a #twitch:focus {
@@ -87,12 +99,13 @@ footer a i {
   height: 100vh;
   background-size: cover;
 }
-
 .mainDisclaimer p {
   display: block;
-  margin: auto;
+  margin: 0 auto;
   width: 50%;
   padding: 1rem;
+  max-height: 100%;
+  max-width: 100%;
   background-color: rgba(245, 245, 245, 0.5);
   border: 1px whitesmoke solid;
   text-align: center;
@@ -100,6 +113,57 @@ footer a i {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+.formContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5% 25%;
+  background-color: lightblue;
+  border: 1px whitesmoke solid;
+}
+.formContainer h4 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px;
+  color: whitesmoke;
+  font-size: 1.4rem;
+}
+.formContainer form {
+  display: block;
+  margin: auto 25%;
+  width: 50%;
+}
+.formContainer form label {
+  padding: 4px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.formContainer form input {
+  outline: none;
+  font-size: 1rem;
+}
+.formContainer form #submit {
+  margin: 8px;
+  padding: 4px;
+  border: 1px whitesmoke solid;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+.formContainer form #submit:hover, .formContainer form #submit:focus {
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: grey;
+}
+
+@media screen and (max-width: 775px) {
+  .mainDisclaimer p {
+    width: 90%;
+  }
+  .formContainer {
+    margin: 1% 5%;
+  }
+}
 /* IMPORTS */
 /* VARIABLES */
 /* MIXINS */
@@ -120,7 +184,7 @@ footer a i {
 #mainMemes th,
 #mainMemes tr,
 #mainMemes td {
-  border: 1px #111 solid;
+  border: 1px lightblue solid;
   background-color: rgba(245, 245, 245, 0.5);
   font-family: "Roboto", sans-serif;
 }
@@ -129,17 +193,26 @@ footer a i {
 }
 #mainMemes th {
   padding: 4px;
+  background-color: lightblue;
 }
 #mainMemes td {
   text-align: center;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", sans-serif;
   padding: 8px;
 }
-#mainMemes td img {
-  display: block;
-  margin: auto;
-  width: 50%;
+#mainMemes td h4 {
+  text-decoration: underline;
   padding: 4px;
+}
+#mainMemes td .imageContainer {
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+#mainMemes td .imageContainer span {
+  font-size: 5rem;
+  vertical-align: middle;
 }
 #mainMemes hr {
   margin: 2% 1%;
@@ -160,12 +233,36 @@ footer a i {
 }
 #mainMemes #highlightSection p {
   border: 1px whitesmoke solid;
-  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 10px;
+  background-color: rgba(211, 211, 211, 0.7);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   padding: 8px;
   line-height: 20px;
 }
 
+/* Memes & Highlights Media Query */
+@media screen and (max-width: 1040px) {
+  td {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 775px) {
+  .imageContainer {
+    font-size: 5rem;
+  }
+  .imageContainer img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
 /* VARIABLES */
 /* MIXINS */
 /* STYLE */
@@ -296,8 +393,30 @@ h1 {
 .blogText p {
   padding: 4px;
   margin-bottom: 1rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Trebuchet MS", sans-serif;
   color: whitesmoke;
+}
+
+#socialFooter {
+  display: block;
+  margin: auto;
+  width: 50%;
+  padding: 1rem;
+}
+#socialFooter button {
+  display: block;
+  margin: auto;
+  width: 50%;
+  background-color: transparent;
+  border: none;
+}
+#socialFooter button:hover, #socialFooter button:focus {
+  cursor: pointer;
+}
+#socialFooter button i {
+  text-align: center;
+  font-size: 2rem;
+  color: gray;
 }
 
 /* Navigation in header & footer */
@@ -324,13 +443,8 @@ ul a:hover, ul a:focus {
   li a {
     font-size: 1.2rem;
   }
-}
-/* Footer Nav order */
-@media screen and (max-width: 775px) {
-  footer ul {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+  header nav {
+    padding-top: 5%;
   }
 }
 /* Tablet & Laptop */
@@ -351,6 +465,9 @@ ul a:hover, ul a:focus {
     text-align: center;
     margin: 0 auto;
     width: 50%;
+  }
+  nav #hamburgerButton:hover, nav #hamburgerButton:focus {
+    cursor: pointer;
   }
   nav ul.show {
     display: flex;

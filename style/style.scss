@@ -166,8 +166,34 @@ h1{
     p{
         padding: 4px;
         margin-bottom: 1rem;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: 'Trebuchet MS', sans-serif;
         color: whitesmoke;
+    }
+}
+
+#socialFooter{
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 1rem;
+
+    button{
+        display: block;
+        margin: auto;
+        width: 50%;
+        background-color: transparent;
+        border: none;
+
+        &:hover,
+        &:focus{
+            cursor: pointer;
+        }
+
+        i{
+            text-align: center;
+            font-size: 2rem;
+            color: gray;
+        }
     }
 }
 
@@ -195,19 +221,15 @@ ul{
 @media screen and (max-width: 1040px) {
     li a{
         font-size: 1.2rem;
-    }
-}
-
-/* Footer Nav order */
-@media screen and (max-width: 775px){
-    footer{
-        ul{
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
+    } 
+    
+    header{
+        nav{
+            padding-top: 5%;
         }
     }
 }
+
 
 /* Tablet & Laptop */                                                        
 @media screen and (max-width: 775px) {
@@ -232,6 +254,11 @@ ul{
             text-align: center;
             margin: 0 auto;
             width: 50%;
+
+            &:hover,
+            &:focus{
+                cursor: pointer;
+            }
         }
 
         ul.show{

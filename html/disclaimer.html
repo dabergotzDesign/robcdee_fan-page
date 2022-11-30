@@ -33,33 +33,70 @@
                 All rights belong to Robcdee, Tracy Haoma & Twitch
             </p>
         </section>
+
+        <!-- Form -->
+        <div class="formContainer">
+        <form onsubmit="OnSubmit()">
+            <h4>send a message</h4>
+                <label for="firstName">
+                    First Name 
+                </label><br>
+                <input type="text" name="firstName" id="firstName" placeholder="John">
+                 <br>
+                <label for="lastName">
+                    Last Name
+                </label><br>
+                <input type="text" name="lastName" id="lastName" placeholder="Doe">
+                 <br>
+                <label for="email">
+                    E-mail
+                </label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="JohnDoe@email.com">
+                <br>
+                <input type="submit" value="send message" id="submit">
+            </form>
+        </div>
     </main>
 
     <footer>
-        <ul>
-            <li>
-                <a class="footerLink" href="https://www.twitch.tv/robcdee" target="_blank">
-                    <i class="fa-brands fa-twitch" id="twitch">Twitch</i>
-                </a>
-            </li>
-            <li>
-                <a  href="https://www.youtube.com/@Robcdee/featured" target="_blank">
-                    <i class="fa-brands fa-youtube" id="youtube">Youtube</i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/robcdee/" target="_blank">
-                    <i class="fa-brands fa-instagram" id="instagram">Instagram</i>
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/robcdee_" target="_blank">
-                    <i class="fa-brands fa-twitter" id="twitter">Twitter</i>
-                </a>
-            </li>
-        </ul>
-</footer>
+        <!-- media query: hide socials, toggle by button (arrow) -->
+            <div id="socialFooter">
+                <button id="socialBtn">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </button>
+            </div>
+            <ul id="socials">
+                <li>
+                    <a class="footerLink" href="https://www.twitch.tv/robcdee" target="_blank">
+                        <i class="fa-brands fa-twitch twitch" id="twitch">Twitch</i>
+                    </a>
+                </li>
+                <li>
+                    <a  href="https://www.youtube.com/@Robcdee/featured" target="_blank">
+                        <i class="fa-brands fa-youtube" id="youtube">Youtube</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/robcdee/" target="_blank">
+                        <i class="fa-brands fa-instagram" id="instagram">Instagram</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/robcdee_" target="_blank">
+                        <i class="fa-brands fa-twitter" id="twitter">Twitter</i>
+                    </a>
+                </li>
+            </ul>
+    </footer>
     
+    <!-- SCRIPTS -->
+    <script src="../js/hamburger_menu.js"></script>
+    <script>
+        function OnSubmit(){
+            alert ("Email got send");
+            console.log("submit");
+        }
+    </script>
 </body>
-<script src="../js/hamburger_menu.js"></script>
 </html>

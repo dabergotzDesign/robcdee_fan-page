@@ -38,48 +38,78 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="../imgs/emotes/suicaDe_dance.gif" alt="suica de dance">
-                            <img src="../imgs/emotes/suicaDe.png" alt="suica de money">
+                            <div class="imageContainer">
+                                <img src="../imgs/emotes/suicaDe_dance.gif" alt="suica de dance">
+                                <img src="../imgs/emotes/suicaDe.png" alt="suica de money">
+                            </div>
                         </td>
                         <td>
+                            <h4>Suica De</h4>
                             Japan has a pay method named Suica.
                             Rob is paying with this method and both emotes are used.
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../imgs/emotes/rcdHutt.png" alt="double chin rob">
+                            <div class="imageContainer">
+                                <img src="../imgs/emotes/rcdHutt.png" alt="double chin rob">
+                            </div>
                         </td>
                         <td>
+                            <h4>rcdHutt</h4>
                             In a moment when Rob & Tracy visited a special Bar (Muscle Girls Bar),
                             he was lifted by some girls and for a photo the double chin appeared.
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../imgs/emotes/tokyoKara.gif" alt="tokyo kara emote, Rob on a bike">
+                            <div class="imageContainer">
+                                <img src="../imgs/emotes/tokyoKara.gif" alt="tokyo kara emote, Rob on a bike">
+                            </div>
+                            
                         </td>
                         <td>
+                            <h4>Tokyo kara</h4>
                             For a challenge Rob was cruising through Japan and in every little Town when someone
                             asked from where he came from the answer was 'Tokyo kara desu' (I am from Tokyo). 
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../imgs/emotes/tracyWalk.gif" alt="Tracy Haoma walk">
+                            <div class="imageContainer">                                
+                                <img src="../imgs/emotes/tracyWalk.gif" alt="Tracy Haoma walk">
+                            </div>                            
                         </td>
                         <td>
+                            <h4>tracyWalk</h4>
                             Tracy has a certain walking style that somehow sticks out.
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="../imgs/emotes/rcd831.png" alt="Robs disguised behind a banner">
+                            <div class="imageContainer">                                
+                                <img src="../imgs/emotes/rcd831.png" alt="Robs disguised behind a banner">
+                            </div>
                         </td>
                         <td>
+                            <h4>rcd831</h4>
                             In an interview with a japanese tv show (which was never shown), Rob got in an image with
                             other people they interview. Unfortunately his appearance was cover by the clock which showed the time 8:31.
                             Everytime it is 8:31 in Japan, the chat spams for one minute the emote.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="imageContainer">                                
+                                <img src="../imgs/emotes/pepeLaugh.gif" alt="pepeLaugh emote">
+                                <span>9</span>
+                            </div>
+                        </td>
+                        <td>
+                            <h4>pepeLaugh 9</h4>
+                            Despite living for almost 9 years in Japan Rob's japanese language skills doesn't show this.
+                            when he's talking japanese it often comes to 'lost in translation' situations or Rob doesn't understand at all,
+                            but playing it like he would understand.
                         </td>
                     </tr>
                 </table>
@@ -115,30 +145,37 @@
     </main>
 
     <footer>
-        <ul>
-            <li>
-                <a class="footerLink" href="https://www.twitch.tv/robcdee" target="_blank">
-                    <i class="fa-brands fa-twitch" id="twitch">Twitch</i>
-                </a>
-            </li>
-            <li>
-                <a  href="https://www.youtube.com/@Robcdee/featured" target="_blank">
-                    <i class="fa-brands fa-youtube" id="youtube">Youtube</i>
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/robcdee/" target="_blank">
-                    <i class="fa-brands fa-instagram" id="instagram">Instagram</i>
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/robcdee_" target="_blank">
-                    <i class="fa-brands fa-twitter" id="twitter">Twitter</i>
-                </a>
-            </li>
-        </ul>
-</footer>
+        <!-- media query: hide socials, toggle by button (arrow) -->
+            <div id="socialFooter">
+                <button id="socialBtn">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </button>
+            </div>
+            <ul id="socials">
+                <li>
+                    <a class="footerLink" href="https://www.twitch.tv/robcdee" target="_blank">
+                        <i class="fa-brands fa-twitch twitch" id="twitch">Twitch</i>
+                    </a>
+                </li>
+                <li>
+                    <a  href="https://www.youtube.com/@Robcdee/featured" target="_blank">
+                        <i class="fa-brands fa-youtube" id="youtube">Youtube</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/robcdee/" target="_blank">
+                        <i class="fa-brands fa-instagram" id="instagram">Instagram</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/robcdee_" target="_blank">
+                        <i class="fa-brands fa-twitter" id="twitter">Twitter</i>
+                    </a>
+                </li>
+            </ul>
+    </footer>
     
+    <!-- SCRIPTS -->
+    <script src="../js/hamburger_menu.js"></script>
 </body>
-<script src="../js/hamburger_menu.js"></script>
 </html>

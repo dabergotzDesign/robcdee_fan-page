@@ -1,6 +1,7 @@
 /* IMPORTS */
 
 /* VARIABLES */
+$font_roboto: 'Roboto', sans-serif;
 
 /* MIXINS */
 
@@ -8,18 +9,88 @@
 .mainDisclaimer{
     height: 100vh;
     background-size: cover;
+
+    p{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        padding: 1rem;
+        max-height: 100%;
+        max-width: 100%;
+    
+        background-color: rgba(245, 245, 245, 0.5);
+        border: 1px whitesmoke solid;
+    
+        text-align: center;
+        font-size: 1rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 }
 
-.mainDisclaimer p{
-    display: block;
-    margin: auto;
-    width: 50%;
-    padding: 1rem;
 
-    background-color: rgba(245, 245, 245, 0.5);
+
+.formContainer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5% 25%;
+
+    background-color: lightblue;
     border: 1px whitesmoke solid;
 
-    text-align: center;
-    font-size: 1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    h4{
+        text-transform: uppercase;
+        text-align: center;
+        padding: 8px;
+        color: whitesmoke;
+        font-size: 1.4rem;
+    }
+
+    form{
+
+        display: block;
+        margin: auto 25%;
+        width: 50%;
+        
+        label{
+            padding: 4px;
+            font-family: $font_roboto;
+            font-weight: bold;
+        }
+
+        input{
+            outline: none;
+            font-size: 1rem;
+        }
+
+        #submit{
+            margin: 8px;
+            padding: 4px;
+            border: 1px whitesmoke solid;
+            border-radius: 10px;
+            font-size: 1.1rem;
+
+            &:hover,
+            &:focus{
+                cursor: pointer;
+                background-color: whitesmoke;
+                color: grey;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .mainDisclaimer{
+        p{
+            width: 90%;
+        }
+    }
+
+    .formContainer{
+        margin: 1% 5%;
+    }
 }
