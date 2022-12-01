@@ -434,6 +434,9 @@ ul a:hover, ul a:focus {
   color: rgb(255, 255, 200);
   text-decoration: underline;
 }
+ul a:not([href]) {
+  color: lightblue;
+}
 
 /* ////////////////////// */
 /* MEDIA QUERY MAIN PAGE */
