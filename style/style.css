@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 header {
   height: 6rem;
-  background-image: linear-gradient(to right, pink, whitesmoke);
+  background-image: linear-gradient(to top, pink, whitesmoke);
   border-bottom: 2px red solid;
 }
 header nav {
@@ -17,8 +17,12 @@ header nav {
 }
 header nav a {
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
   color: whitesmoke;
-  text-shadow: 1px 1px #111;
+  /* text-shadow: 1px 1px #111; */
+  background-image: radial-gradient(rgb(255, 159, 175), pink);
+  border-radius: 20px;
+  padding: 8px;
 }
 header nav button {
   display: none;
@@ -352,13 +356,13 @@ h1 {
   left: 1rem;
 }
 .about #omegalul {
-  border: none;
-  height: 40px;
-  width: 42.6666666667px;
-  padding: 0;
+  height: 34.2857142857px;
+  width: 36.5714285714px;
+  /*
   margin: 4px;
   transform: translateY(4px);
-  transform: translateX(-1rem);
+  transform: translateX(-1rem); */
+  content: url("../imgs/OMEGALUL.png");
 }
 
 /* about container, text and images about robcdee */
@@ -431,11 +435,11 @@ ul a {
   text-decoration: none;
 }
 ul a:hover, ul a:focus {
-  color: rgb(255, 255, 200);
-  text-decoration: underline;
+  color: rgb(255, 66, 145);
+  border: rgb(255, 66, 145) 2px solid;
 }
 ul a:not([href]) {
-  color: lightblue;
+  color: dimgray;
 }
 
 /* ////////////////////// */

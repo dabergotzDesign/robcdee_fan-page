@@ -10,7 +10,7 @@ $font_nav: 'Roboto', sans-serif;
 
 header{
     height: 6rem;
-    background-image: linear-gradient(to right, pink, whitesmoke);
+    background-image: linear-gradient(to top, pink, whitesmoke);
     border-bottom: 2px red solid;
 
     nav{
@@ -21,8 +21,12 @@ header{
 
         a{
             font-family: 'Roboto', sans-serif;
+            font-weight: bold;
             color: $color_Link;
-            text-shadow: 1px 1px #111;
+            /* text-shadow: 1px 1px #111; */
+            background-image: radial-gradient(rgb(255, 159, 175), pink);
+            border-radius: 20px;
+            padding: 8px;
         }
 
         button{

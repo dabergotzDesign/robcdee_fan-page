@@ -13,3 +13,4 @@ socialsBtn.addEventListener('click', ()=>{
   socials.classList.toggle('showSocials');
   arrow.classList.toggle('fa-rotate-180');
 });
+

@@ -12,6 +12,7 @@ $font-size_NAV_header: 1.5rem;
 $color_blogLink: whitesmoke;
 $color_text: whitesmoke;
 $color_cherryBlossom: #ffb7c5;
+$color_hover: rgb(255, 66, 145);
 
 $font_roboto: 'Roboto', sans-serif;
 $font_BebasNeue: 'Bebas Neue', cursive;
@@ -120,13 +121,13 @@ h1{
         }
 
         #omegalul{
-            border: none;
-            height: (120px / 3);
-            width: (128px / 3);
-            padding: 0;
+            height: (120px / 3.5);
+            width: (128px / 3.5);
+            /*
             margin: 4px;
             transform: translateY(4px);
-            transform: translateX(-1rem);
+            transform: translateX(-1rem); */
+            content: url('../imgs/OMEGALUL.png');
         }
 
 }
@@ -207,12 +208,12 @@ ul{
 
         &:hover,
         &:focus{
-            color: rgb(255, 255, 200);
-            text-decoration: underline;
+            color: $color_hover;
+            border: $color_hover 2px solid;
         }
 
         &:not([href]){
-            color:lightblue;
+            color: dimgray;
         }
     }
 }
