@@ -11,6 +11,10 @@ $color_twitter: #1DA1F2;
 $font_roboto: 'Roboto', sans-serif;
 
 /* MIXINS */
+@mixin socialLinks {
+    text-decoration: none;
+    border:none;
+}
 
 
 footer{
@@ -45,25 +49,25 @@ footer{
         #twitch:hover,
         #twitch:focus{
             color: $color_twitch;
-            text-decoration: none;
+            @include socialLinks();
         }
 
         #youtube:hover,
         #youtube:focus{
             color: $color_youtube;
-            text-decoration: none;
+            @include socialLinks();
         }
 
         #instagram:hover,
         #instagram:focus{
             color: $color_instagram;
-            text-decoration: none;
+            @include socialLinks();
         }
 
         #twitter:hover,
         #twitter:focus{
             color: $color_twitter;
-            text-decoration: none;
+            @include socialLinks();
         }
 
             i{

@@ -73,21 +73,25 @@ footer a #twitch:hover,
 footer a #twitch:focus {
   color: #772ce8;
   text-decoration: none;
+  border: none;
 }
 footer a #youtube:hover,
 footer a #youtube:focus {
   color: #FF0000;
   text-decoration: none;
+  border: none;
 }
 footer a #instagram:hover,
 footer a #instagram:focus {
   color: white;
   text-decoration: none;
+  border: none;
 }
 footer a #twitter:hover,
 footer a #twitter:focus {
   color: #1DA1F2;
   text-decoration: none;
+  border: none;
 }
 footer a i {
   color: grey;
@@ -294,7 +298,7 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   height: 20vh;
-  max-width: 100%;
+  width: 100%;
   -webkit-animation: bannerChange 30s infinite ease-in-out alternate;
           animation: bannerChange 30s infinite ease-in-out alternate;
 }
@@ -462,9 +466,8 @@ ul a:not([href]) {
     width: 100%;
   }
   nav ul li {
-    margin: 0;
+    margin: 12px;
     padding: 0 4px;
-    background-color: rgba(173, 216, 230, 0.75);
     z-index: 999;
   }
   nav #hamburgerButton {
@@ -479,24 +482,26 @@ ul a:not([href]) {
   nav ul.show {
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
+    height: 100%;
     text-align: center;
-    padding: 2px 4px;
+    padding: 1rem;
   }
   /* Main */
   h1 {
     font-size: 2.5rem;
     padding: 1px 1rem;
   }
-  .bannerContainer {
-    overflow: visible;
-  }
+  /* .bannerContainer{
+      overflow: visible;
+  } */
   .banner {
     height: 10vh;
   }
   .imageContainer {
-    display: block;
-    margin: auto;
-    width: 50%;
+    width: 100%;
+    max-width: 50%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

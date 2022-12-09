@@ -36,8 +36,8 @@ $font_BebasNeue: 'Bebas Neue', cursive;
 }
 
 @mixin BlogImg () {
-    height: (800px / 4);
-    width: (900px / 4);
+    height: clamp((800px / 8), (800px / 4), (800px / 2));
+    width: clamp((900px / 8), (900px / 4), (900px / 2));
     margin: 1rem;
 
     border: 4px gold solid;
@@ -77,7 +77,7 @@ main{
         
 
         height: 20vh;
-        max-width: 100%;
+        width:clamp(100%, 50%, 25%);
 
         animation: bannerChange 30s infinite ease-in-out alternate;
     }
@@ -247,9 +247,8 @@ ul{
             width: 100%;
 
             li{
-                margin: 0;
+                margin: 12px;
                 padding: 0 4px;
-                background-color: rgba(173, 216, 230, 0.75);
                 z-index: 999;
             }
         }
@@ -269,8 +268,10 @@ ul{
         ul.show{
             display: flex;
             flex-flow: column nowrap;
+            align-items: center;
+            height: 100%;
             text-align: center;
-            padding: 2px 4px;
+            padding: 1rem;
         }
        }
 
@@ -281,18 +282,18 @@ ul{
         padding: 1px 1rem;
     }
 
-    .bannerContainer{
+    /* .bannerContainer{
         overflow: visible;
-    }
+    } */
 
     .banner{
         height: 10vh;
     }
 
     .imageContainer{
-        display: block;
-        margin: auto;
-        width: 50%;
+        width: 100%;
+        max-width: 50%;
+        height: auto;
     }
     
 }
