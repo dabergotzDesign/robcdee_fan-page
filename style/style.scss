@@ -36,8 +36,8 @@ $font_BebasNeue: 'Bebas Neue', cursive;
 }
 
 @mixin BlogImg () {
-    height: clamp((800px / 8), (800px / 4), (800px / 2));
-    width: clamp((900px / 8), (900px / 4), (900px / 2));
+    max-height: (800px / 3);
+    max-width: (900px / 3);
     margin: 1rem;
 
     border: 4px gold solid;
@@ -56,9 +56,7 @@ $font_BebasNeue: 'Bebas Neue', cursive;
 }
 
 main{
-    background-image: url("../imgs/Backgrounds/rcdee_background.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("../imgs/Backgrounds/rcdee_background.png") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -123,10 +121,6 @@ h1{
         #omegalul{
             height: (120px / 3.5);
             width: (128px / 3.5);
-            /*
-            margin: 4px;
-            transform: translateY(4px);
-            transform: translateX(-1rem); */
             content: url('../imgs/OMEGALUL.png');
         }
 
@@ -205,16 +199,18 @@ ul{
     }
     a{
         @include LinksNav();
+    }
+}
 
-        &:hover,
-        &:focus{
-            color: $color_hover;
-            border: $color_hover 2px solid;
-        }
+header{
+    a:hover,
+    a:focus{
+        color: $color_hover;
+        border: $color_hover 2px solid;
+    }
 
-        &:not([href]){
-            color: dimgray;
-        }
+    a:not([href]){
+        color: dimgray;
     }
 }
 
@@ -222,22 +218,8 @@ ul{
                                                         /* MEDIA QUERY MAIN PAGE */
                                                         /* ////////////////////// */
 
-/* Nav resolution */
-@media screen and (max-width: 1040px) {
-    li a{
-        font-size: 1.2rem;
-    } 
-    
-    header{
-        nav{
-            padding-top: 5%;
-        }
-    }
-}
-
-
-/* Tablet & Laptop */                                                        
-@media screen and (max-width: 775px) {
+/* Mobile */                                                        
+@media screen and (max-width: 480px) {
 
     /* Header */
     nav{
@@ -247,9 +229,14 @@ ul{
             width: 100%;
 
             li{
-                margin: 12px;
+                margin: 10px;
+                margin-top: 12px;
                 padding: 0 4px;
-                z-index: 999;
+                z-index: 1;
+
+                a{
+                    font-size: 14px;
+                }
             }
         }
 
@@ -276,24 +263,58 @@ ul{
        }
 
 
-    /* Main */
+    /* /// Main /// */
     h1{
-        font-size: 2.5rem;
+        font-size: 2rem;
         padding: 1px 1rem;
     }
 
-    /* .bannerContainer{
+    .bannerContainer{
         overflow: visible;
-    } */
+    }
 
     .banner{
-        height: 10vh;
+        height: 200vh;
     }
 
-    .imageContainer{
-        width: 100%;
-        max-width: 50%;
-        height: auto;
+
+    .blogContainer{
+
+        img{
+            height: (800px / 4);
+            width: (900px / 4);
+        }
+
     }
     
+}
+
+
+/* Tablet */
+@media screen and (max-width: 770px) and (min-width: 480px) {
+   
+    /* Header */
+    nav{
+        
+        ul{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            margin-top: 5%;
+            margin-left: 10%;
+
+            li{
+                padding: 0 2px;
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+    } 
+    
+    /* Main */
+    h1{
+        font-size: 4rem;
+    }
+   
 }

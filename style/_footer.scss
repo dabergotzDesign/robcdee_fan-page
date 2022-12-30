@@ -49,24 +49,28 @@ footer{
         #twitch:hover,
         #twitch:focus{
             color: $color_twitch;
+            text-decoration: underline;
             @include socialLinks();
         }
 
         #youtube:hover,
         #youtube:focus{
             color: $color_youtube;
+            text-decoration: underline;
             @include socialLinks();
         }
 
         #instagram:hover,
         #instagram:focus{
             color: $color_instagram;
+            text-decoration: underline;
             @include socialLinks();
         }
 
         #twitter:hover,
         #twitter:focus{
             color: $color_twitter;
+            text-decoration: underline;
             @include socialLinks();
         }
 

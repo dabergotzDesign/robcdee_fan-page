@@ -39,6 +39,15 @@
         </section>
 
         <!-- Form -->
+        <section id="contactForm">
+
+        
+        <!-- button for modal -->
+        <div id="modalBtn">
+            send a message: <br>
+            <i class="fas fa-envelope"></i>
+        </div>
+
         <div class="formContainer">
         <form onsubmit="OnSubmit()">
             <h4>send a message</h4>
@@ -67,6 +76,40 @@
                 <input type="submit" value="send message" id="submit">
             </form>
         </div>
+
+        <!-- FORM MODAL MOBILE -->
+        <div class="modalForm">
+            <span id="close">&times;</span>
+            <form onsubmit="OnSubmit()">
+                <h4>send a message</h4>
+                    <label for="firstName">
+                        First Name 
+                    </label><br>
+                    <input type="text" name="firstName" id="firstName" placeholder="John">
+                    <br>
+                    <label for="lastName">
+                        Last Name
+                    </label><br>
+                    <input type="text" name="lastName" id="lastName" placeholder="Doe">
+                    <br>
+                    <label for="email">
+                        E-mail
+                    </label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="JohnDoe@email.com">
+                    <br>
+                    <label for="textArea">
+                        Your message
+                    </label>
+                    <br>
+                    <textarea name="message" id="textArea" cols="30" rows="10"></textarea>
+                    <br>
+                    <input type="submit" value="send message" id="submit">
+                </form>
+            </div>
+
+    </section>
+
     </main>
 
     <footer>
@@ -102,6 +145,7 @@
     
     <!-- SCRIPTS -->
     <script src="../js/hamburger_menu.js"></script>
+    <script src="../js/modal.js"></script>
     <script>
         function OnSubmit(){
             alert ("Email got send");

@@ -14,3 +14,17 @@ socialsBtn.addEventListener('click', ()=>{
   arrow.classList.toggle('fa-rotate-180');
 });
 
+/* replace Nav "Memes & Highlights with Memes" */
+const memes = document.querySelectorAll("a")[1];
+
+window.addEventListener("resize", ()=>{
+  if(window.innerWidth <= 840){
+    memes.textContent = "Memes";
+  }
+  else
+  {
+    memes.textContent = "Memes & Highlights";
+  }
+});
+
+
